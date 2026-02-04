@@ -1565,24 +1565,35 @@ Universidad de Antioquia-Colombia</p>
       }
     });
   </script>
-    <script>
-      // Collapse de tarjetas: mostrar 6 inicialmente y desplegar las restantes al click
-      document.addEventListener('DOMContentLoaded', function() {
-        const procesos = document.getElementById('procesoscard');
-        if (!procesos) return;
-        procesos.classList.add('collapsed');
+  <script>
+    // Toggle entre "Más publicaciones" y "Ver menos"
+    document.addEventListener('DOMContentLoaded', function() {
+      const procesos = document.getElementById('procesoscard');
+      const btn = document.getElementById('btn-more-publications');
+      if (!procesos || !btn) return;
 
-        const btn = document.getElementById('btn-more-publications');
-        if (!btn) return;
+      // Colapsar inicialmente
+      procesos.classList.add('collapsed');
 
-        btn.addEventListener('click', function(e) {
-          e.preventDefault();
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const isCollapsed = procesos.classList.contains('collapsed');
+        
+        if (isCollapsed) {
+          // Expandir
           procesos.classList.remove('collapsed');
-          btn.style.display = 'none';
+          btn.textContent = 'Ver menos';
           const target = document.getElementById('galeriadeexperiencias');
           if (target) target.scrollIntoView({ behavior: 'smooth' });
-        });
+        } else {
+          // Colapsar
+          procesos.classList.add('collapsed');
+          btn.textContent = 'Más publicaciones';
+          // Scroll hacia el botón/sección de procesos
+          btn.scrollIntoView({ behavior: 'smooth' });
+        }
       });
-    </script>
+    });
+  </script>
 </body>
 </html>
