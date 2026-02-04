@@ -44,6 +44,15 @@
         justify-content: center !important;
       }
     }
+
+    /* Efecto hover para las tarjetas del blog */
+    .blog-card {
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .blog-card:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 
@@ -90,168 +99,78 @@
 
   </header>
   <main>
-    <div class="fondo">
+    <!-- Banner -->
+    <div class="container-fluid" style="background: linear-gradient(135deg, #004200 0%, #006600 100%); height: 100px; display: flex; align-items: center; justify-content: center;">
+      <h2 class="text-white text-center m-0">Blog - Procesos y Experiencias</h2>
+    </div>
 
-      <!-- Tarjetas -->
-
-      <div class="container">
-        <div class="container-fluid mt-5 text-center row justify-content-center ">
-          <div class="encabezado col-sm-10 col-md-10 col-lg-8 col-xl-10 ">
-            <span class="badge-custom " style="color: black; font-size: 30px; ">Procesos</span>
-            <h1> Entre barrios populares <span style="color: #004200;"> y favelas </span> </h1>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div class="container ">
-
-        <!--             inicio publicaciones -->
-        <div class="row mt-5">
-
-          <!-- card 1 -->
-          <div class="col-md-4 ">
-            <div class="card-custom " style="box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <a href="../pages/proyecto-2022-compartires-populares.html"> <img src="../recursos/img/corazon1.jpeg"
-                    alt="Imagen 1" /> </a>
-              </div>
-              <h4 class="text-center">
-                2022 - Actual
-                <br>
-                CompartirES PopularES
-              </h4>
-              <p>
-                Proceso de investigación-acción-participación, con inicio en 2010, en el
-                que han participado habitantes de barrios populares de Medellín, universidades de Medellín y brasileñas,
-                servidores públicos del Parque Explora,
-                del Sistema de Bibliotecas Públicas de Medellín y del Banco de la República, sede Medellín.
-              </p>
-              <div class="container col-12 text-center ">
-                <a href="../pages/proyecto-2022-compartires-populares.html" class="btn-pill ">Ver más</a>
-              </div>
+    <!-- Contenedor Blog -->
+    <div class="container" style="padding: 30px 15px;">
+      <div class="row">
+        <!-- Columna 8: Tarjetas -->
+        <div class="col-lg-8 col-md-12">
+          <!-- Tarjeta 1 -->
+          <div class="card blog-card mb-3" style="display: flex; flex-direction: row; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+            <img src="https://static.wixstatic.com/media/697903_14a4e71cde2f4069a2180282fa7410a4~mv2.jpg/v1/fill/w_400,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5769_JPG.jpg" alt="Imagen 1" style="width: 40%; object-fit: cover; min-width: 150px;">
+            <div class="card-body d-flex flex-column justify-content-center" style="width: 60%; padding: 20px;">
+              <h1 style="font-size: 24px; color: #004200; margin-bottom: 10px;">Transformación de Favelas</h1>
+              <p style="font-size: 16px; color: #555; margin: 0;">Proceso de investigación participativa en barrios populares de Medellín y favelas de Río de Janeiro, enfocado en la apropiación social del territorio y la memoria urbana.</p>
             </div>
           </div>
 
-          <!--         card 2 -->
-          <div class="col-md-4">
-            <div class="card-custom" style="box-shadow: 1px 20px  20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <img
-                  src="https://static.wixstatic.com/media/697903_14a4e71cde2f4069a2180282fa7410a4~mv2.jpg/v1/fill/w_317,h_212,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5769_JPG.jpg"
-                  alt="Imagen 3" />
-              </div>
-              <h4 class="text-center">2018 <br>
-                Transformación de favelas
-                en Río de Janeiro-Brasil
-                y barrios populares
-                de Medellín-Colombia
-                por prácticas de turismo</h4>
-              <p>
-                Se hace memoria de lo propio, se hace memoria de los lugares que sentimos propios,
-                a veces nos quitan los lugares que nos pertenecen y nos imponen otros caminos, otros formas de habitar y
-                es ejercicio personal y colectivo re-significar las formas de estar en lo nuevo.
-              </p>
-              <div class="container col-12 text-center ">
-                <a href="../pages/proyecto-2018-transformacion-favelas.html" class="btn-pill ">Ver más</a>
-              </div>
+          <!-- Tarjeta 2 -->
+          <div class="card blog-card mb-3" style="display: flex; flex-direction: row; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+            <img src="https://static.wixstatic.com/media/697903_44489d95207f4048af7abcd1f5f47edd~mv2.jpeg/v1/fill/w_400,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_44489d95207f4048af7abcd1f5f47edd~mv2.jpeg" alt="Imagen 2" style="width: 40%; object-fit: cover; min-width: 150px;">
+            <div class="card-body d-flex flex-column justify-content-center" style="width: 60%; padding: 20px;">
+              <h1 style="font-size: 24px; color: #004200; margin-bottom: 10px;">Sentipensar el Barrio</h1>
+              <p style="font-size: 16px; color: #555; margin: 0;">Descripción y espacialización de la memoria urbana de la población que habita el área de influencia de la intervención PUI-NOR en Santo Domingo Savio, comuna 1 de Medellín.</p>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card-custom" style="box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <img
-                  src="https://static.wixstatic.com/media/697903_44489d95207f4048af7abcd1f5f47edd~mv2.jpeg/v1/fill/w_288,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_44489d95207f4048af7abcd1f5f47edd~mv2.jpeg"
-                  alt="Imagen 3" />
-              </div>
-              <h4 class="text-center">2017 <br> Sentipensar el barrio</h4>
-              <p>
-                La descripción y espacialización de la memoria urbana de la población que habita el área de influencia
-                de la intervención PUI-NOR, realizada en la centralidad de Santo Domingo Savio,
-                comuna 1 del Municipio de Medellín (Colombia) entre 2004 y 2011
-              </p>
-              <div class="container col-12 text-center ">
-                <a href="../pages/proyecto-2017-sentipensar-barrio.html" class="btn-pill">Ver más</a>
-              </div>
+          <!-- Tarjeta 3 -->
+          <div class="card blog-card mb-3" style="display: flex; flex-direction: row; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+            <img src="https://static.wixstatic.com/media/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg/v1/fill/w_400,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg" alt="Imagen 3" style="width: 40%; object-fit: cover; min-width: 150px;">
+            <div class="card-body d-flex flex-column justify-content-center" style="width: 60%; padding: 20px;">
+              <h1 style="font-size: 24px; color: #004200; margin-bottom: 10px;">La Memoria se Construye Caminando</h1>
+              <p style="font-size: 16px; color: #555; margin: 0;">Ejercicio colectivo de reconstrucción de la memoria urbana mediante recorridos territoriales que permiten re-significar formas de estar y habitar en los barrios populares.</p>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card-custom" style="box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <img
-                  src="https://static.wixstatic.com/media/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg/v1/fill/w_308,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg"
-                  alt="Imagen 3" />
-              </div>
-              <h4 class="text-center">2016 <br> La memoría se construye caminando</h4>
-              <p>
-                La descripción y espacialización de la memoria urbana de la población que habita el área de influencia
-                de la intervención PUI-NOR, realizada en la centralidad de Santo Domingo Savio,
-                comuna 1 del Municipio de Medellín (Colombia) entre 2004 y 2011
-              </p>
-              <div class="container col-12 text-center ">
-                <a href="../pages/proyecto-2016-memoria-caminando.html" class="btn-pill">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card-custom" style="box-shadow: 1px 20px  20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <img
-                  src="https://static.wixstatic.com/media/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg/v1/fill/w_288,h_189,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg"
-                  alt="Imagen 3" />
-              </div>
-              <h4 class="text-center">2015 <br>
-                Barrios populares Medellín y favelas São Paulo</h4>
-              <p>
-                La descripción y espacialización de la memoria urbana de la población que habita el área de influencia
-                de la intervención PUI-NOR, realizada en la centralidad de Santo Domingo Savio,
-                comuna 1 del Municipio de Medellín (Colombia) entre 2004 y 2011
-              </p>
-              <div class="container col-12 text-center ">
-                <a href="../pages/proyecto-2015-barrios-medellin-favelas-sp.html" class="btn-pill">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card-custom" style="box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <img
-                  src="https://static.wixstatic.com/media/697903_89872cd8ba19413fad554c887da5f2e0~mv2.jpg/v1/fill/w_300,h_192,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_89872cd8ba19413fad554c887da5f2e0~mv2.jpg"
-                  alt="Imagen 2" />
-              </div>
-              <h4 class="text-center">2014 <br> Apropiación social del conocimiento</h4>
-              <p>
-                Entendida como construcción social participativa y contextualizada en torno al conocimiento que
-                permite a los sujetos que lo generan, reflexionar, aprehender, usar y potenciar sus saberes
-                para la transformación positiva de su realidad (Gutiérrez, et al., 2014)
-              </p>
-              <div class="container col-12 text-center ">
-                <a href="../pages/proyecto-2014-apropiacion-conocimiento.html" class="btn-pill">Ver más</a>
-              </div>
+          <!-- Tarjeta 4 -->
+          <div class="card blog-card mb-3" style="display: flex; flex-direction: row; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+            <img src="https://static.wixstatic.com/media/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg/v1/fill/w_400,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg" alt="Imagen 4" style="width: 40%; object-fit: cover; min-width: 150px;">
+            <div class="card-body d-flex flex-column justify-content-center" style="width: 60%; padding: 20px;">
+              <h1 style="font-size: 24px; color: #004200; margin-bottom: 10px;">Barrios Populares y Favelas</h1>
+              <p style="font-size: 16px; color: #555; margin: 0;">Estudio comparativo entre barrios populares de Medellín y favelas de São Paulo, analizando dinámicas de urbanización, participación y transformación social en contextos similares.</p>
             </div>
           </div>
         </div>
 
-        <div class="mas m-auto text-center">
-          <a href="#" class="btn mt-4 m-auto "
-            style="border: 2px solid ;background-color: #004200; color: white; border-radius: 30px;font-size: 30px;">Más
-            publicaciones</a>
+        <!-- Columna 4: Sidebar -->
+        <div class="col-lg-4 col-md-12">
+          <div style="background: #f8f6f2; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #004200; margin-bottom: 15px;">Categorías</h3>
+            <ul style="list-style: none; padding: 0;">
+              <li style="padding: 10px 0; border-bottom: 1px solid #ddd;"><a href="#" style="color: #004200; text-decoration: none;">Investigación</a></li>
+              <li style="padding: 10px 0; border-bottom: 1px solid #ddd;"><a href="#" style="color: #004200; text-decoration: none;">Participación Comunitaria</a></li>
+              <li style="padding: 10px 0; border-bottom: 1px solid #ddd;"><a href="#" style="color: #004200; text-decoration: none;">Memoria Urbana</a></li>
+              <li style="padding: 10px 0;"><a href="#" style="color: #004200; text-decoration: none;">Transformación Social</a></li>
+            </ul>
+          </div>
+
+          <div style="background: #f8f6f2; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+            <h3 style="color: #004200; margin-bottom: 15px;">Publicaciones Recientes</h3>
+            <p style="font-size: 14px; color: #555; margin-bottom: 10px;"><strong>Patrimonios, memorias e historias</strong> que tejen la periferia urbana latinoamericana.</p>
+            <p style="font-size: 14px; color: #555;"><strong>Urbanismo social en Medellín</strong> entre la garantía de derechos y la complejidad territorial.</p>
+          </div>
         </div>
-
       </div>
+    </div>
 
-      <!-- Nueva Sección Popular-es dentro del contenedor de Barrios populares -->
-      <div class="text-center mt-5">
 
-        <!-- Decoraciones -->
-        <div class="decor-right"></div>
 
-      </div>
+
+
   </main>
 
 
