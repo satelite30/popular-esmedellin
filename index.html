@@ -12,7 +12,8 @@
 
   <!-- Palabras clave (SEO) -->
   <meta name="keywords"
-    content="Medio Ambiente, Sociedad, MASO, Medellín, barrios populares, investigación, memoria urbana, transformación social, América Latina, experiencias, publicaciones, UdeA, comunidad, territorio, planeación, participación, cultura popular" />
+            audio.muted = true;
+            audio.play();
 
   <!-- Autor -->
   <meta name="author" content="Grupo MASO - Universidad de Antioquia" />
@@ -326,6 +327,19 @@
 
 
 </head>
+
+<style>
+  /* Mostrar sólo 6 cards por defecto dentro del contenedor de procesos */
+  #procesoscard.collapsed .row > *:nth-child(n+7) {
+    display: none !important;
+  }
+  /* Si quieres una transición suave puedes añadir visibility/height cambios aquí */
+  @media (max-width: 767px) {
+    #procesoscard.collapsed .row > *:nth-child(n+7) {
+      display: none !important;
+    }
+  }
+</style>
 
 <body>
 
@@ -786,7 +800,7 @@ https://github.com/satelite30/logo-test/blob/main/hdb-images/005arbol.jpg?raw=tr
       </div>
 
 
-      <div id="#procesoscard " class="container  ">
+      <div id="procesoscard" class="container">
         <div class="row mt-5 s">
 
           <!-- card 0-01 -->
@@ -1021,7 +1035,7 @@ Universidad de Antioquia-Colombia</p>
       </div>
 
       <div class="mas m-auto text-center pb-4">
-        <a href="#galeriadeexperiencias" class="btn mt-1 m-auto "
+        <a id="btn-more-publications" href="#galeriadeexperiencias" class="btn mt-1 m-auto "
           style="border: 2px solid ;background-color: #004200; color: white; border-radius: 30px;font-size: 30px;">Más
           publicaciones</a>
       </div>
@@ -1063,7 +1077,7 @@ Universidad de Antioquia-Colombia</p>
 
     </div>
 
-    <div class="container-fluid" id="galeriadeexperiencias" data-aos="zoom-in">
+    <div class="container-fluid" id="galeriadeexperiencias2" data-aos="zoom-in">
       <!-- gallery image -->
       <div class="container-fluid
          pt-1  espaciogaleria" >
@@ -1551,5 +1565,24 @@ Universidad de Antioquia-Colombia</p>
       }
     });
   </script>
+    <script>
+      // Collapse de tarjetas: mostrar 6 inicialmente y desplegar las restantes al click
+      document.addEventListener('DOMContentLoaded', function() {
+        const procesos = document.getElementById('procesoscard');
+        if (!procesos) return;
+        procesos.classList.add('collapsed');
+
+        const btn = document.getElementById('btn-more-publications');
+        if (!btn) return;
+
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          procesos.classList.remove('collapsed');
+          btn.style.display = 'none';
+          const target = document.getElementById('galeriadeexperiencias');
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    </script>
 </body>
 </html>
