@@ -162,3 +162,57 @@ info procesos
         <div class="decor-right"></div>
 
       </div>
+
+
+
+
+
+      compartires pages
+
+      <!-- <div class="container  m-auto col-sm-11 col-md-11 col-lg-12  justify-content-center p-4 ">
+          <img src="https://github.com/satelite30/-logossitio/blob/main/HdB2.webp?raw=true" alt="logo huellas de barrio" style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.836);"  class="image-hdb col-lg-12 col-sm-6 col-md-10 m-auto  justify-content-center " id="hdbLogoImg" data-bs-toggle="modal" data-bs-target="#hdbModal">
+          
+          </div> -->
+
+          <!-- Modal para imagen Huellas de Barrio -->
+    <div class="modal fade" id="hdbModal" tabindex="-1" aria-labelledby="hdbModalLabel" aria-hidden="true">
+
+      
+  <div class="modal-dialog modal-xl modal-dialog-centered w-90 m-auto" style="max-width:90vw;">
+        <div class="modal-content bg-white p-2">
+          <div class="modal-header border-0">
+            <h5 class="modal-title w-100 text-center fw-bold" id="hdbModalLabel">Video clip canción Huellas de Barrio</h3>
+            <button type="button" class="btn p-0 m-0 border-0 bg-transparent position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Cerrar" style="font-size:2.5rem;z-index:10;">
+              <i class="fa-solid fa-xmark p-3" style="color:#949494;"></i>
+            </button>
+          </div>
+          <div class="modal-body d-flex justify-content-center align-items-center  "  >
+               <!-- video -->     
+      <!-- <div class="container-fluid  align-items-center justify-content-center m-auto ">
+        <div class=" d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+          <div class="col-lg-12 col-md-10 col-sm-12 mx-auto border border-info border-5" >
+            <iframe class="text-center w-100" style="height: 20vh; display: block; margin: auto; max-width: 80%;" src="https://www.youtube.com/embed/W9zla7jn9VU?list=RDW9zla7jn9VU&autoplay=1&mute=1&controls=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> 
+            </iframe>
+          </div>
+        </div>
+      </div> -->
+      <!-- video -->
+    <div class="container-fluid m-3 align-items-center justify-content-center m-auto ">
+      <div class="video-container  d-flex justify-content-center align-items-center " style=" max-height: 80vh;">
+        <div class="col-lg-10 col-md-12 col-sm-12 mx-auto conyoutube">
+          <iframe class="text-center w-100 videoyt" style=" display: block; margin: auto; max-height: 80vh;"
+            src="https://www.youtube.com/embed/W9zla7jn9VU?list=RDW9zla7jn9VU&autoplay=1&mute=1&controls=1"
+            title="YouTube video" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    
+    </div>
