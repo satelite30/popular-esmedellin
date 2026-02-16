@@ -216,3 +216,463 @@ info procesos
 
     
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ----------------------------------------------//----------------------------------------------------//--------------------------
+
+    carousel
+
+    <div class="cardsM border border-info">
+        <style>
+          /* Carousel 3-up styles */
+          #cardsCarouselCustom .card-custom {
+            border-radius: 12px;
+            overflow: visible;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            background: transparent;
+            height: 300px; /* fixed container height requested */
+            display: flex;
+            flex-direction: column;
+          }
+          #cardsCarouselCustom .card-top {
+            background: #4b7bfd; /* azul del header */
+            height: 100px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            position: relative;
+            flex: 0 0 auto;
+          }
+          #cardsCarouselCustom .avatar {
+            width: 86px;
+            height: 86px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            background: #eee;
+          }
+          #cardsCarouselCustom .card-body-custom {
+            background: #fff;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+            flex: 1 1 auto; /* allow body to fill remaining height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.5rem;
+            overflow: hidden;
+          }
+          #cardsCarouselCustom .card-title {
+            margin-top: 0.5rem;
+            font-weight: 700;
+          }
+          #cardsCarouselCustom .card-text {
+            color: #666;
+            font-size: 14px;
+          }
+          /* indicators centered below */
+          #cardsCarouselCustom + .carousel-indicators {
+            margin-top: 1rem;
+          }
+          /* center nav vertically */
+          #cardsCarouselCustom .carousel-control-prev,
+          #cardsCarouselCustom .carousel-control-next {
+            width: auto;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          /* remove default bootstrap chevrons for this carousel */
+          #cardsCarouselCustom .carousel-control-prev-icon,
+          #cardsCarouselCustom .carousel-control-next-icon {
+            background-image: none;
+          }
+          /* custom angled arrow styles (Font Awesome) */
+          #cardsCarouselCustom .ctrl-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            background: #ffffff;
+            color: #4b7bfd;
+            border-radius: 50%;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            border: 2px solid rgba(75, 123, 253, 0.08);
+          }
+          #cardsCarouselCustom .ctrl-icon:hover {
+            transform: scale(1.03);
+          }
+          /* position adjustments */
+          #cardsCarouselCustom .carousel-control-prev {
+            left: 1rem;
+          }
+          #cardsCarouselCustom .carousel-control-next {
+            right: 1rem;
+          }
+          /* ensure 3-up spacing */
+          #cardsCarouselCustom .col-visible {
+            display: flex;
+          }
+          #cardsCarouselCustom .col-visible .card-custom {
+            width: 100%;
+          }
+          @media (max-width: 767px) {
+            #cardsCarouselCustom .col-md-4 {
+              flex: 0 0 100%;
+              max-width: 100%;
+            }
+            #cardsCarouselCustom .carousel-control-prev,
+            #cardsCarouselCustom .carousel-control-next {
+              display: none;
+            }
+          }
+        </style>
+
+        <div class="container-fluid px-0 mt-3">
+          <div
+            id="cardsCarouselCustom"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="4500"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1: cards 1,2,3 -->
+              <div class="carousel-item active">
+                <div class="row justify-content-center g-3">
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p1/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">David Dell</h5>
+                        <p class="card-text">
+                          Breve descripción o rol de la persona, acorde al
+                          ejemplo visual mostrado.
+                        </p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p2/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">Rose Bush</h5>
+                        <p class="card-text">
+                          Pequeña descripción que acompañe el título y el botón.
+                        </p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p3/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">Jones Gail</h5>
+                        <p class="card-text">
+                          Texto corto explicativo sobre la tarjeta o persona.
+                        </p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: cards 2,3,4 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center g-3">
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p2/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">Rose Bush</h5>
+                        <p class="card-text">
+                          Pequeña descripción que acompañe el título y el botón.
+                        </p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p3/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">Jones Gail</h5>
+                        <p class="card-text">
+                          Texto corto explicativo sobre la tarjeta o persona.
+                        </p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p4/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">Person 4</h5>
+                        <p class="card-text">Descripción de la tarjeta 4.</p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: cards 3,4,1 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center g-3">
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p3/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">Jones Gail</h5>
+                        <p class="card-text">
+                          Texto corto explicativo sobre la tarjeta o persona.
+                        </p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p4/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">Person 4</h5>
+                        <p class="card-text">Descripción de la tarjeta 4.</p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p1/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">David Dell</h5>
+                        <p class="card-text">
+                          Breve descripción o rol de la persona, acorde al
+                          ejemplo visual mostrado.
+                        </p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: cards 4,1,2 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center g-3">
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p4/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">Person 4</h5>
+                        <p class="card-text">Descripción de la tarjeta 4.</p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p1/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">David Dell</h5>
+                        <p class="card-text">
+                          Breve descripción o rol de la persona, acorde al
+                          ejemplo visual mostrado.
+                        </p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-visible">
+                    <div class="card-custom">
+                      <div class="card-top">
+                        <img
+                          class="avatar"
+                          src="https://picsum.photos/seed/p2/200"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div class="card-body-custom">
+                        <h5 class="card-title">Rose Bush</h5>
+                        <p class="card-text">
+                          Pequeña descripción que acompañe el título y el botón.
+                        </p>
+                        <a class="btn btn-primary btn-sm mt-2" href="#"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#cardsCarouselCustom"
+              data-bs-slide="prev"
+              aria-label="Anterior"
+            >
+              <i class="fa fa-angle-left ctrl-icon" aria-hidden="true"></i>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#cardsCarouselCustom"
+              data-bs-slide="next"
+              aria-label="Siguiente"
+            >
+              <i class="fa fa-angle-right ctrl-icon" aria-hidden="true"></i>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+
+            <!-- Indicators centered -->
+            <div class="carousel-indicators justify-content-center mt-3">
+              <button
+                type="button"
+                data-bs-target="#cardsCarouselCustom"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#cardsCarouselCustom"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#cardsCarouselCustom"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#cardsCarouselCustom"
+                data-bs-slide-to="3"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      ----------------------------------//--------------------------------------------------//-------------------------------------
+
+<!-- imagenes de presentacion  -->
+      <div class="page-cover ">
+              <img src="../recursos/img/ParteIVElcorazóndelbarrio-ObedYepes-2021.jpg" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 0;" class="img-fluid rounded shadow" />
+            </div>

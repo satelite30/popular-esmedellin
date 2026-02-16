@@ -75,71 +75,6 @@
       p{font-size: 22px; }
 
 
-
-
-/* Carousel 3-up styles */
-    #cardsCarouselCustom .card-custom {
-      border-radius: 12px;
-      overflow: visible;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-      background: transparent;
-    }
-    #cardsCarouselCustom .card-top {
-      background: #4b7bfd; /* azul del header */
-      height: 90px;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      position: relative;
-    }
-    #cardsCarouselCustom .avatar {
-      width: 86px;
-      height: 86px;
-      border-radius: 50%;
-      border: 6px solid #fff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      object-fit: cover;
-      background: #eee;
-    }
-    #cardsCarouselCustom .card-body-custom {
-      background: #fff;
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-      padding: 1.25rem;
-      text-align: center;
-    }
-    #cardsCarouselCustom .card-title { margin-top: 0.5rem; font-weight:700; }
-    #cardsCarouselCustom .card-text { color:#666; font-size: 14px; }
-    /* indicators centered below */
-    #cardsCarouselCustom + .carousel-indicators { margin-top: 1rem; }
-    /* center nav vertically */
-    #cardsCarouselCustom .carousel-control-prev,
-    #cardsCarouselCustom .carousel-control-next { width: 4%; top:50%; transform: translateY(-50%); }
-    /* ensure 3-up spacing */
-    #cardsCarouselCustom .col-visible { display:flex; }
-    #cardsCarouselCustom .col-visible .card-custom { width:100%; }
-    @media (max-width: 767px) {
-      #cardsCarouselCustom .col-md-4 { flex:0 0 100%; max-width:100%; }
-      #cardsCarouselCustom .carousel-control-prev, #cardsCarouselCustom .carousel-control-next { display:none; }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       .video-container {
         max-width: 100%;
         margin: 0 auto;
@@ -151,8 +86,22 @@
 
       .videoyt{ 
         height:80vh;
-
       }
+      .conyoutubedos{
+        width:100% !important;
+        max-width:100% !important;
+        padding:0;
+        margin:0;
+      }
+
+      .conyoutubedos .videoyt {
+        height:40vh;
+        width:100%;
+        display:block;
+        margin:0;
+      }
+
+  
 
       .conyoutube{
         width:90vw;
@@ -217,6 +166,9 @@
 
   }
 
+  
+    
+
 
    .espaciogaleria{
     width: 99%;        
@@ -242,12 +194,15 @@
             href="../index.html" style=" justify-content: start ;">
             <img src="../recursos/img/logo4.png" alt="Logo" width="100%" class="logo d-block mx-auto mx-lg-0   " />
           </a>
+
+          <!-- Modal para galería doble (carouselModal) caption -->
         </div>
 
         <div class="col-lg-4  col-md-12 col-sm-12 ">
           <button class="navbar-toggler d-lg-none mx-auto mt-2 mb-4 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="display: flex; justify-content: center; align-items: center;">
             <span class="navbar-toggler-icon  "></span>
           </button>
+                  
           <div class="collapse navbar-collapse d-lg-flex justify-content-center  py-2" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto d-flex justify-content-center w-100">
               <li class="nav-item m-auto m-2">
@@ -286,7 +241,81 @@
       <section class="container-fluid  page-content">
   <div class="row align-items-start g-4">
           <div class="col-lg-5 col-md-6 col-12 mb-3 mb-md-0">
-             <!-- carrousel logos move fluid -->
+         
+
+            <div class="col-12">
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/70YqtSPQo3Zz08YTjo1P0q?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+
+              <div class=" col-12  ">
+                <a href="https://music.youtube.com/watch?v=SrOhSZl09VQ&si=O4a5n_cO4CA4IbxH" target="_blank" rel="noopener noreferrer" class="btn btn-danger btn-lg m-2" style="background: linear-gradient(90deg,#43b800,#092700); border:none; color:white; font-weight:bold; ">
+                  <i class="fa fa-music" style="padding: 150px auto;"></i> Escucha "Huellas de Barrio" en YouTube Music
+                </a>
+              </div>
+
+
+              <!-- video  conyoutubedos -->
+    <div class="container m-3 align-items-center justify-content-center m-auto ">
+      <div class="video-container  d-flex justify-content-center align-items-center " >
+        <div class="col-lg-10 col-md-12 col-sm-12 mx-auto conyoutubedos">
+          <iframe class="text-center  w-100 videoyt" style=" display: block; margin: auto;"
+            src="https://www.youtube.com/embed/W9zla7jn9VU?list=RDW9zla7jn9VU&autoplay=1&mute=1&controls=1"
+            title="YouTube video" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+            
+    <!-- lista de imagenes -->
+
+            <div class="page-cover align-items-end ">
+              <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine5.jpeg?raw=true" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;" class="img-fluid rounded shadow" />
+            </div>
+    
+            <div class="page-cover align-items-end ">
+              <img src="https://github.com/satelite30/logo-test/blob/main/02.jpeg?raw=true" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;" class="img-fluid rounded shadow" />
+            </div>
+
+            <div class="page-cover align-items-end ">
+              <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural3.jpeg" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;" class="img-fluid rounded shadow" />
+            </div>
+
+            
+            
+
+             <!-- cancion huellas de barrio -->
+               <div class="contenidoMusica row ">
+              
+              
+
+              
+
+              </div>
+
+          </div>
+          <div class="col-lg-7 col-md-6 col-sm-6 pt-4" >
+            <div class="textoDesc2 container  px-4">
+            <article >
+              <h3>Descripción</h3>
+              <p>
+                Proceso de investigación-acción-participación, con inicio en 2010, en el que han participado habitantes de barrios populares de Medellín, universidades de diferentes ciudades de América Latina y servidores públicos.
+              </p>
+              <p>
+                La pretensión es comprender las contradicciones que ocurren en la apropiación de espacios y equipamientos públicos de barrios y el fortalecimiento de propuestas comunitarias para su disfrute colectivo frente a su mercantilización, abandono social e institucional y bajo interés de uso social. Son claves del proceso acompañar la incidencia de la política pública en la vida de la gente y la visibilización de la memoria urbana, desde sus identidades y diversidades, como clave de lucha social.​
+              </p>
+              <p>
+                Los resultados divulgados en este sitio muestran una línea del tiempo de creación popular. Entre 2010 y 2015 se construyen referentes contextuales, conceptuales y teóricos comprehensivos de la incidencia de la política urbana latinoamericana en los barrios, así como de la lucha de pobladores frente a nuevas lógicas de mercantilización de la vida; mientras que a partir de 2016, el foco ha estado en la juntanza popular de mano de habitantes, visitantes, e instituciones amigas. La implementación de estrategias metodológicas participativas nos han ayudado comprender, intervenir e incidir en las dinámicas urbanas; siendo producto la creación de nuevas formas de apropiación social y cultural de los espacios públicos, en evidente disputa.
+              </p>
+              <p>
+                Se ha producido y apropiado conocimiento socialmente útil mediante intercambios recíprocos entre participantes que parten de las potencialidades y necesidades de los barrios en diversos lenguajes y formatos: murales, canciones, poemas, fanzines, relatos de vida, microdocumentales, obras de teatro, emprendimientos, siembra, cuentos, cartillas, propuestas de intervención y proyectos de investigación y publicaciones en artículos, libros, capítulos de libro y ponencias.
+              </p>
+             
+            </article>
+            </div>
+                <!-- carrousel logos move fluid -->
   <section class="container-fluid ">
 
       <div class="container py-2 col-lg-12  slideNuevo ">
@@ -346,259 +375,13 @@
       </div>
       </section>  
 
-            <div class="col-12">
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/70YqtSPQo3Zz08YTjo1P0q?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              </div>
-
-              <div class=" col-12  ">
-                <a href="https://music.youtube.com/watch?v=SrOhSZl09VQ&si=O4a5n_cO4CA4IbxH" target="_blank" rel="noopener noreferrer" class="btn btn-danger btn-lg m-2" style="background: linear-gradient(90deg,#43b800,#092700); border:none; color:white; font-weight:bold; ">
-                  <i class="fa fa-music" style="padding: 150px auto;"></i> Escucha "Huellas de Barrio" en YouTube Music
-                </a>
-              </div>
-
-            
-            <div class="page-cover align-items-end ">
-              <img src="https://github.com/satelite30/logo-test/blob/main/02.jpeg?raw=true" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;" class="img-fluid rounded shadow" />
-            </div>
-            <div class="page-cover align-items-end ">
-              <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural3.jpeg" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;" class="img-fluid rounded shadow" />
-            </div>
-            <div class="page-cover ">
-              <img src="../recursos/img/ParteIVElcorazóndelbarrio-ObedYepes-2021.jpg" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 0;" class="img-fluid rounded shadow" />
-            </div>
-
-             <!-- cancion huellas de barrio -->
-               <div class="contenidoMusica row ">
-              
-              
-
-              
-
-              </div>
 
           </div>
-          <div class="col-lg-7 col-md-6 col-sm-6" >
-            <div class="textoDesc2 container  px-4">
-            <article >
-              <h3>Descripción</h3>
-              <p>
-                Proceso de investigación-acción-participación, con inicio en 2010, en el que han participado habitantes de barrios populares de Medellín, universidades de diferentes ciudades de América Latina y servidores públicos.
-              </p>
-              <p>
-                La pretensión es comprender las contradicciones que ocurren en la apropiación de espacios y equipamientos públicos de barrios y el fortalecimiento de propuestas comunitarias para su disfrute colectivo frente a su mercantilización, abandono social e institucional y bajo interés de uso social. Son claves del proceso acompañar la incidencia de la política pública en la vida de la gente y la visibilización de la memoria urbana, desde sus identidades y diversidades, como clave de lucha social.​
-              </p>
-              <p>
-                Los resultados divulgados en este sitio muestran una línea del tiempo de creación popular. Entre 2010 y 2015 se construyen referentes contextuales, conceptuales y teóricos comprehensivos de la incidencia de la política urbana latinoamericana en los barrios, así como de la lucha de pobladores frente a nuevas lógicas de mercantilización de la vida; mientras que a partir de 2016, el foco ha estado en la juntanza popular de mano de habitantes, visitantes, e instituciones amigas. La implementación de estrategias metodológicas participativas nos han ayudado comprender, intervenir e incidir en las dinámicas urbanas; siendo producto la creación de nuevas formas de apropiación social y cultural de los espacios públicos, en evidente disputa.
-              </p>
-              <p>
-                Se ha producido y apropiado conocimiento socialmente útil mediante intercambios recíprocos entre participantes que parten de las potencialidades y necesidades de los barrios en diversos lenguajes y formatos: murales, canciones, poemas, fanzines, relatos de vida, microdocumentales, obras de teatro, emprendimientos, siembra, cuentos, cartillas, propuestas de intervención y proyectos de investigación y publicaciones en artículos, libros, capítulos de libro y ponencias.
-              </p>
-             
-            </article>
-            </div>
-          </div>
+
+          
 
 
-<div class="cardsM">
 
-  
-  <div class="container-fluid px-0 mt-3">
-    <div id="cardsCarouselCustom" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
-
-      <div class="carousel-inner">
-        <!-- Slide 1: cards 1,2,3 -->
-        <div class="carousel-item active">
-          <div class="row justify-content-center g-3">
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p1/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">David Dell</h5>
-                  <p class="card-text">Breve descripción o rol de la persona, acorde al ejemplo visual mostrado.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p2/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">Rose Bush</h5>
-                  <p class="card-text">Pequeña descripción que acompañe el título y el botón.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p3/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">Jones Gail</h5>
-                  <p class="card-text">Texto corto explicativo sobre la tarjeta o persona.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2: cards 2,3,4 -->
-        <div class="carousel-item">
-          <div class="row justify-content-center g-3">
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p2/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">Rose Bush</h5>
-                  <p class="card-text">Pequeña descripción que acompañe el título y el botón.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p3/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">Jones Gail</h5>
-                  <p class="card-text">Texto corto explicativo sobre la tarjeta o persona.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p4/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">Person 4</h5>
-                  <p class="card-text">Descripción de la tarjeta 4.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3: cards 3,4,1 -->
-        <div class="carousel-item">
-          <div class="row justify-content-center g-3">
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p3/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">Jones Gail</h5>
-                  <p class="card-text">Texto corto explicativo sobre la tarjeta o persona.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p4/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">Person 4</h5>
-                  <p class="card-text">Descripción de la tarjeta 4.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p1/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">David Dell</h5>
-                  <p class="card-text">Breve descripción o rol de la persona, acorde al ejemplo visual mostrado.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4: cards 4,1,2 -->
-        <div class="carousel-item">
-          <div class="row justify-content-center g-3">
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p4/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">Person 4</h5>
-                  <p class="card-text">Descripción de la tarjeta 4.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p1/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">David Dell</h5>
-                  <p class="card-text">Breve descripción o rol de la persona, acorde al ejemplo visual mostrado.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-visible">
-              <div class="card-custom">
-                <div class="card-top">
-                  <img class="avatar" src="https://picsum.photos/seed/p2/200" alt="avatar">
-                </div>
-                <div class="card-body-custom">
-                  <h5 class="card-title">Rose Bush</h5>
-                  <p class="card-text">Pequeña descripción que acompañe el título y el botón.</p>
-                  <a class="btn btn-primary btn-sm mt-2" href="#">View More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#cardsCarouselCustom" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#cardsCarouselCustom" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-
-      <!-- Indicators centered -->
-      <div class="carousel-indicators justify-content-center mt-3">
-        <button type="button" data-bs-target="#cardsCarouselCustom" data-bs-slide-to="0" class="active" aria-current="true"></button>
-        <button type="button" data-bs-target="#cardsCarouselCustom" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#cardsCarouselCustom" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#cardsCarouselCustom" data-bs-slide-to="3"></button>
-      </div>
-
-    </div>
-  </div>
-
-</div>
 
           
           <!-- espacio de mas informacion -->
@@ -783,6 +566,11 @@
                 Esta juntanza multiplicadora, hoy vigente, desde su conformación fue grito de revisión de las formas de relacionamiento reproductoras de desigualdades en la producción de conocimiento, allí el cuidado y el afecto se desplegaron como el protocolo común para hacer frente a las preguntas iniciales y garantizar la permanencia de la acción colectiva. El recurso audiovisual es un relato a voces de la experiencia de Huellas de Barrio tras la presencia enmascarada del mercado en el turismo y la transformación de las prácticas cotidianas en la ciudad popular. Un proceso que fue incentivo para poner en entredicho las formas serias y solitarias de la producción de conocimiento y celebrar la construcción de confianza, la intimidad y la amistad como fuerza metodológica para encontrar caminos a los retos de la ciudad hoy.
               </p>
         </div>
+
+
+        
+
+
 
 
         <div class="imagenes-carousel-dos">
@@ -1031,20 +819,30 @@
           </div>
           <div class="modal-body d-flex justify-content-center align-items-center position-relative" style="min-height:60vh;">
             <button id="prevImgBtn" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y" style="z-index:2;" aria-label="Anterior"><i class="fa fa-chevron-left fa-2x"></i></button>
-            <img id="modalGalleryImg" src="" alt="Imagen ampliada" class="img-fluid rounded shadow mx-auto d-block" style="max-height:70vh; object-fit:contain; background:#f8f8f8;" />
+            <img id="modalGalleryImg" src="" alt="Imagen ampliada" class="img-fluid rounded shadow mx-auto d-block" style="max-height:70vh; object-fit:contain; background:#646464;" />
             <button id="nextImgBtn" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y" style="z-index:2;" aria-label="Siguiente"><i class="fa fa-chevron-right fa-2x"></i></button>
+          </div>
+          <div class="modal-footer d-flex flex-column align-items-center">
+            <p id="modalGalleryCaption" class="text-light small mb-2" style="max-width:90%; margin:0 auto;"></p>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>
     </div>
 
     <script>
-      // Array de URLs de las imágenes de la columna
+      // Array de URLs de las imágenes de la columna y sus descripciones
       const galleryImages = [
+        'https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine5.jpeg?raw=true',
         'https://github.com/satelite30/logo-test/blob/main/02.jpeg?raw=true',
-        'https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural3.jpeg',
-        '../recursos/img/ParteIVElcorazóndelbarrio-ObedYepes-2021.jpg'
+        'https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural3.jpeg'
       ];
+      const galleryCaptions = [
+        'Fanzine: trabajo colectivo y gráficas comunitarias.',
+        'Foto: imagen del proyecto CompartirES PopularES.',
+        'Mural: intervención urbana realizada por participantes del proyecto.'
+      ];
+
       let currentImgIdx = 0;
 
       // Asignar evento click a cada imagen de la columna
@@ -1078,6 +876,8 @@
         if (idx >= galleryImages.length) idx = 0;
         currentImgIdx = idx;
         document.getElementById('modalGalleryImg').src = galleryImages[currentImgIdx];
+        const capEl = document.getElementById('modalGalleryCaption');
+        if (capEl) capEl.textContent = galleryCaptions[currentImgIdx] || '';
       }
     </script>
    
@@ -1087,11 +887,26 @@
       document.addEventListener('DOMContentLoaded', function() {
         const imgNodes = Array.from(document.querySelectorAll('.imagenes-carousel-dos img'));
         if (!imgNodes.length) return;
-
         const imgs = imgNodes.map(img => img.src);
+        const imgCaptions = imgNodes.map((img, i) => {
+          // Provide default captions or use data-caption attribute if present on the image
+          return img.getAttribute('data-caption') || ['Fanzine: trabajo colectivo', 'Foto proyecto', 'Mural comunitario'][i] || '';
+        });
         let idx = 0;
         const modalEl = document.getElementById('carouselModal');
         const modalImg = document.getElementById('carouselModalImg');
+        let modalCaption = document.getElementById('carouselModalCaption');
+        if (!modalCaption && modalEl) {
+          const footer = modalEl.querySelector('.modal-footer');
+          if (footer) {
+            modalCaption = document.createElement('p');
+            modalCaption.id = 'carouselModalCaption';
+            modalCaption.className = 'text-light small mb-2';
+            modalCaption.style.maxWidth = '90%';
+            modalCaption.style.margin = '0 auto';
+            footer.insertBefore(modalCaption, footer.firstElementChild);
+          }
+        }
         const bsModal = new bootstrap.Modal(modalEl);
 
         imgNodes.forEach((img, i) => {
@@ -1099,6 +914,7 @@
           img.addEventListener('click', () => {
             idx = i;
             modalImg.src = imgs[idx];
+            if (modalCaption) modalCaption.textContent = imgCaptions[idx] || '';
             bsModal.show();
           });
         });
@@ -1107,12 +923,14 @@
           e.stopPropagation();
           idx = (idx - 1 + imgs.length) % imgs.length;
           modalImg.src = imgs[idx];
+          if (modalCaption) modalCaption.textContent = imgCaptions[idx] || '';
         });
 
         document.getElementById('carouselNext').addEventListener('click', function(e) {
           e.stopPropagation();
           idx = (idx + 1) % imgs.length;
           modalImg.src = imgs[idx];
+          if (modalCaption) modalCaption.textContent = imgCaptions[idx] || '';
         });
       });
     </script>
