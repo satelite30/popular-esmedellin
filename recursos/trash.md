@@ -943,3 +943,80 @@ info procesos
                 Esta juntanza multiplicadora, hoy vigente, desde su conformación fue grito de revisión de las formas de relacionamiento reproductoras de desigualdades en la producción de conocimiento, allí el cuidado y el afecto se desplegaron como el protocolo común para hacer frente a las preguntas iniciales y garantizar la permanencia de la acción colectiva. El recurso audiovisual es un relato a voces de la experiencia de Huellas de Barrio tras la presencia enmascarada del mercado en el turismo y la transformación de las prácticas cotidianas en la ciudad popular. Un proceso que fue incentivo para poner en entredicho las formas serias y solitarias de la producción de conocimiento y celebrar la construcción de confianza, la intimidad y la amistad como fuerza metodológica para encontrar caminos a los retos de la ciudad hoy.
               </p>
         </div>
+
+
+
+        <div class="cardsMod">
+  <div class="row g-3 my-3">
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-light border-info h-100">
+        <div class="card-body">
+          <h5 class="card-title">Videoclip "Huellas de Barrio"</h5>
+          <p class="card-text" style="text-align:justify; font-size:0.95rem;">
+            La canción Huellas de Barrio es resultado de la reunión de diferentes ritmos musicales y de artistas de comunas del Distrito de Ciencia Tecnología e innovación de Medellín, Departamento de Antioquia, Colombia. Además de compartir la pasión por el arte, tienen en común un interés decidido por la defensa de sus barrios mediante la bandera del arte. El contenido de este videoclip es producto de un proceso formativo crítico realizado entre 2018 y 2022, en el cual confluyen espacios de reflexión sobre diferentes temáticas y recorridos territoriales con énfasis en cuidado de los barrios.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-light border-info h-100">
+        <div class="card-body">
+          <h5 class="card-title">Mural: SentirEs PopularEs </h5>
+          <p class="card-text" style="text-align:justify; font-size:0.95rem;">
+            En el marco de la inauguración del Salón Juvenil de la Parroquia Santa María La Sierra, el arte urbano popular posibilitó un espacio abierto para que habitantes del barrio La Sierra y representantes de instituciones como Engim, UdeA (estudiantes de trabajo social), Huellas de Barrio, congregación Giuseppini di Murialdo, Mesa Juvenil La Sierra es Otro Cuento, Parque Biblioteca La Ladera; se reunieran en un espacio público para jugar, hacer manualidades, leer y escribir, pintar, estampar, diseñar y comer. Una toma cultural de encuentro intergeneracional posibilitó la reflexión del cuidado del barrio con apropiación de lo público como bien común.
+
+            <br>
+            
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-light border-info h-100">
+        <div class="card-body">
+          <h5 class="card-title">El corazón del barrio II. Oficios y haceres populares </h5>
+          <p class="card-text" style="text-align:justify; font-size:0.95rem;">
+          
+             Obra materializada en el diseño de un mural de 2x4metros ubicado en el barrio Santo Domingo Savio en la plazoleta pública del Parque Biblioteca Nororiental. Esta creación exalta el valor de las acciones y prácticas cotidianas de los habitantes de barrios populares como símbolos de apropiación de la memoria colectiva y resistencia a la visión globalizada de desarrollo y a la histórica ausencia estatal, por ello plasma los convites, los liderazgos y las festividades comunitarias, actividades que fomentan el cuidado de lo común y vinculan a la comunidad en acciones colectivas que fomentan la paz territorial y el cuidado barrial. Participaron habitantes, colectivos comunitarios como Casa Galeria, Trash Art, El Megáfono, Red Árbol Bello Oriente, representantes del Parque Biblioteca Nororiental, colectivo profesoral y estudiantil de la Universidad de Antioquia (grupo MASO)
+            
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+
+
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-light border-info h-100">
+        <div class="card-body">
+          <h5 class="card-title">Fanzine</h5>
+          <p class="card-text" style="text-align:justify; font-size:0.95rem;">
+            Producto colaborativo realizado con población infantil que reúne reflexiones en torno a los patrimonios populares barriales. Implicó el desarrollo de un proceso participativo con niños y niñas entre los 6 y los 14 años mediante encuentros de lectura, escritura, juego y dinamización para conversar sobre el cuidado del barrio. Fue un proceso de base comunitaria y autogestionado.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-light border-info h-100">
+        <div class="card-body">
+          <h5 class="card-title">Artículo en medio comunitario </h5>
+          <p class="card-text" style="text-align:justify; font-size:0.95rem;">
+            Artículo periodístico en medio comunitario "Lo que no aparece en la postal: Invisibilidades del turismo en la Medellín popular". Con esta publicación se busca impactar directamente a público no especializado, ofreciendo información sobre cotidianos barriales que aportan a diagnósticos territoriales. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
