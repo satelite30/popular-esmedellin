@@ -74,7 +74,22 @@
       .page-content { max-width: 1000px;  }
       p{font-size: 22px; }
 
+    /* Hover scale for cards inside .cardsMod */
+    .cardsMod .card {
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+      transform-origin: center center;
+      cursor: default;
+    }
+    .cardsMod .card:hover {
+      transform: translateY(-6px) scale(1.035);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.18);
+      z-index: 2;
+    }
 
+    /* Make card body pointer when hoverable */
+    .cardsMod .card .card-body { cursor: pointer; }
+
+    </style>
       .video-container {
         max-width: 100%;
         margin: 0 auto;
@@ -381,7 +396,53 @@
           
 
 
+<div class="cardsMod">
+  <div class="row g-3 my-3">
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-light border-info h-100">
+        <div class="card-body">
+          <h5 class="card-title">Videoclip "Huellas de Barrio"</h5>
+          <p class="card-text" style="text-align:justify; font-size:0.95rem;">
+            La canción Huellas de Barrio es resultado de la reunión de diferentes ritmos musicales y de artistas de comunas del Distrito de Ciencia Tecnología e innovación de Medellín, Departamento de Antioquia, Colombia. Además de compartir la pasión por el arte, tienen en común un interés decidido por la defensa de sus barrios mediante la bandera del arte. El contenido de este videoclip es producto de un proceso formativo crítico realizado entre 2018 y 2022, en el cual confluyen espacios de reflexión sobre diferentes temáticas y recorridos territoriales con énfasis en cuidado de los barrios.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-light border-info h-100">
+        <div class="card-body">
+          <h5 class="card-title">Arte gráfico y postal urbana</h5>
+          <p class="card-text" style="text-align:justify; font-size:0.95rem;">
+            En el marco de la inauguración del Salón Juvenil de la Parroquia Santa María La Sierra, el arte urbano popular posibilitó un espacio abierto para que habitantes del barrio La Sierra y representantes de instituciones como Engim, UdeA (estudiantes de trabajo social), Huellas de Barrio, congregación Giuseppini di Murialdo, Mesa Juvenil La Sierra es Otro Cuento, Parque Biblioteca La Ladera; se reunieran en un espacio público para jugar, hacer manualidades, leer y escribir, pintar, estampar, diseñar y comer. Una toma cultural de encuentro intergeneracional posibilitó la reflexión del cuidado del barrio con apropiación de lo público como bien común.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-light border-info h-100">
+        <div class="card-body">
+          <h5 class="card-title">Fanzine</h5>
+          <p class="card-text" style="text-align:justify; font-size:0.95rem;">
+            Producto colaborativo realizado con población infantil que reúne reflexiones en torno a los patrimonios populares barriales. Implicó el desarrollo de un proceso participativo con niños y niñas entre los 6 y los 14 años mediante encuentros de lectura, escritura, juego y dinamización para conversar sobre el cuidado del barrio. Fue un proceso de base comunitaria y autogestionado.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-light border-info h-100">
+        <div class="card-body">
+          <h5 class="card-title">Publicación y creación gráfica</h5>
+          <p class="card-text" style="text-align:justify; font-size:0.95rem;">
+            Artículo periodístico en medio comunitario "Lo que no aparece en la postal: Invisibilidades del turismo en la Medellín popular". Con esta publicación se busca impactar directamente a público no especializado, ofreciendo información sobre cotidianos barriales que aportan a diagnósticos territoriales. Además, se diseñó un mural de 2x4 metros en el barrio Santo Domingo Savio que exalta acciones y prácticas cotidianas de habitantes y colectivos, promoviendo la apropiación de la memoria colectiva y el cuidado de lo común.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
           
           <!-- espacio de mas informacion -->
