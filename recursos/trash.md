@@ -932,3 +932,14 @@ info procesos
         </div>    
           </div>
          </div>
+
+         <h3 class="mt-4"> Huellas de Barrio: red popular, sentipensante y actuante</h3>
+              <p>
+                <strong>Resumen:</strong> La transformación y afectación del cotidiano de los barrios populares de Medellín por prácticas de turismo es el contexto en el que emerge el colectivo Huellas de Barrio, una red de ciudad constituida en 2018, con antecedentes de procesos participativos desde el 2016. Esta reúne personas de instituciones públicas gubernamentales, de universidades, organizaciones sociales y colectivos comunitarios presentes en barrios populares de las comunas 1 Popular, 2 Santa Cruz, 3 Manrique, 6 Doce de Octubre, 8 Villa Hermosa, y 13 San Javier de Medellín-Colombia de manera solidaria. Su despliegue ha sido fundado como proceso formativo, expositivo, gestor y multiplicador de conversaciones que se extendieron desde las localidades de los barrios habitados por cada participante hasta los escenarios de ciudad para observar, sentir, revelar y plantear los problemas y alternativas en defensa de lo humano, de lo colectivo y de la vida digna.
+              </p>
+
+    
+              <p>
+                Esta juntanza multiplicadora, hoy vigente, desde su conformación fue grito de revisión de las formas de relacionamiento reproductoras de desigualdades en la producción de conocimiento, allí el cuidado y el afecto se desplegaron como el protocolo común para hacer frente a las preguntas iniciales y garantizar la permanencia de la acción colectiva. El recurso audiovisual es un relato a voces de la experiencia de Huellas de Barrio tras la presencia enmascarada del mercado en el turismo y la transformación de las prácticas cotidianas en la ciudad popular. Un proceso que fue incentivo para poner en entredicho las formas serias y solitarias de la producción de conocimiento y celebrar la construcción de confianza, la intimidad y la amistad como fuerza metodológica para encontrar caminos a los retos de la ciudad hoy.
+              </p>
+        </div>
