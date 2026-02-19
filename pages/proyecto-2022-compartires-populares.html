@@ -243,6 +243,29 @@
       font-size: 14px;
       color: #333;
     }
+    /* Ajustes para la card contenedora de cada imagen */
+    .image-card {
+      background: transparent;
+      border: none;
+      padding: 0;
+    }
+    .image-card .card-img-top {
+      border-radius: 12px;
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+    /* Centrar una card específica y limitar su ancho en pantallas grandes */
+    .image-card.centered {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 520px;
+      width: 100%;
+    }
+    @media (max-width: 576px) {
+      .image-card.centered { max-width: 100%; padding-left: 12px; padding-right: 12px; }
+    }
   </style>
 </head>
 
@@ -308,7 +331,7 @@
 
     <section class="container-fluid  page-content">
       <div class="row align-items-start g-4">
-        <div class="col-lg-5 col-md-6 col-12 mb-3 mb-md-0">
+        <div class="col-lg-5 col-md-6 col-12 mb-3 mb-md-0 ">
 
 
           <div class="col-12">
@@ -345,32 +368,38 @@
 
           <!-- lista de imagenes -->
 
-          <div class="page-cover align-items-end ">
-            <figure style="margin:0; padding:20px 10px;">
-              <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine5.jpeg?raw=true"
+          <div class="page-cover align-items-end d-flex justify-content-center">
+            <div class="card image-card centered  " style="margin:0; padding:20px 10px; border:0; background:white;">
+              <img class="py-2" src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine5.jpeg?raw=true"
                 alt="CompartirES PopularES" style="object-fit: contain;"
-                class="img-fluid rounded shadow" data-img-index="0" />
-              <figcaption class="img-caption"></figcaption>
-            </figure>
+                class="card-img-top img-fluid rounded shadow" data-img-index="0" />
+              <div class="card-body py-2 ">
+                <p class="img-caption  mb-0"></p>
+              </div>
+            </div>
           </div>
 
           <div class="page-cover align-items-end ">
-            <figure style="margin:0; padding:20px 10px;">
+            <div class="card image-card" style="margin:0; padding:20px 10px; border:0; background:transparent;">
               <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/mural1.jpeg?raw=true"
                 alt="CompartirES PopularES" style="object-fit: contain;"
-                class="img-fluid rounded shadow" data-img-index="1" />
-              <figcaption class="img-caption"></figcaption>
-            </figure>
+                class="card-img-top img-fluid rounded shadow" data-img-index="1" />
+              <div class="card-body py-2">
+                <p class="img-caption mb-0"></p>
+              </div>
+            </div>
           </div>
 
           <div class="page-cover align-items-end ">
-            <figure style="margin:0; padding:20px 10px;">
+            <div class="card image-card" style="margin:0; padding:20px 10px; border:0; background:transparent;">
               <img
                 src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural3.jpeg"
                 alt="CompartirES PopularES" style="object-fit: contain;"
-                class="img-fluid rounded shadow" data-img-index="2" />
-              <figcaption class="img-caption"></figcaption>
-            </figure>
+                class="card-img-top img-fluid rounded shadow" data-img-index="2" />
+              <div class="card-body py-2">
+                <p class="img-caption mb-0"></p>
+              </div>
+            </div>
           </div>
 
 
@@ -1158,10 +1187,10 @@
         e.stopPropagation();
         showGalleryImg(currentImgIdx + 1);
       });
-      // Rellenar pies de foto bajo cada imagen con la información de `galleryCaptions`
-      const figureEls = document.querySelectorAll('.col-lg-5 .page-cover figure');
-      figureEls.forEach((fig, i) => {
-        const cap = fig.querySelector('.img-caption');
+      // Rellenar pies de foto bajo cada imagen (ahora dentro de .image-card)
+      const cardEls = document.querySelectorAll('.col-lg-5 .page-cover .image-card');
+      cardEls.forEach((card, i) => {
+        const cap = card.querySelector('.img-caption');
         if (cap) cap.textContent = galleryCaptions[i] || '';
       });
     });
@@ -1177,9 +1206,21 @@
       if (idx < 0) idx = galleryImages.length - 1;
       if (idx >= galleryImages.length) idx = 0;
       currentImgIdx = idx;
-      document.getElementById('modalGalleryImg').src = galleryImages[currentImgIdx];
+      // Preferir la imagen y la descripción que están dentro de la card correspondiente
+      const cardEls = document.querySelectorAll('.col-lg-5 .page-cover .image-card');
+      const card = cardEls[currentImgIdx] || null;
+      const imgInCard = card ? card.querySelector('img') : null;
+      const captionInCard = card ? (card.querySelector('.img-caption') ? card.querySelector('.img-caption').textContent : '') : '';
+
+      const modalImgEl = document.getElementById('modalGalleryImg');
+      if (imgInCard && imgInCard.src) {
+        modalImgEl.src = imgInCard.src;
+      } else {
+        modalImgEl.src = galleryImages[currentImgIdx];
+      }
+
       const capEl = document.getElementById('modalGalleryCaption');
-      if (capEl) capEl.textContent = galleryCaptions[currentImgIdx] || '';
+      if (capEl) capEl.textContent = captionInCard || galleryCaptions[currentImgIdx] || '';
     }
   </script>
 
