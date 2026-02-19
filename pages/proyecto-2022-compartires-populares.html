@@ -154,6 +154,27 @@
       z-index: 1;
     }
 
+    /* Botón de cierre con FontAwesome */
+    .btn-close-fa {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.55);
+      color: #353535;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .btn-close-fa:hover {
+      background: rgba(0, 73, 28, 0.85);
+      color: #ffffff;
+    }
+
+    .btn-close-fa i { font-size: 20px; }
+
 
     footer {
       width: 100%;
@@ -266,6 +287,7 @@
     @media (max-width: 576px) {
       .image-card.centered { max-width: 100%; padding-left: 12px; padding-right: 12px; }
     }
+    
   </style>
 </head>
 
@@ -581,7 +603,9 @@
 
                         <div class="modal-header">
                           <h5 class="modal-title" id="videoModalLabel">Videoclip "Huellas de Barrio"</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                          </button>
                         </div>
 
                         <div class="modal-body">
@@ -597,7 +621,7 @@
                   </div>
 
 
-                  <!--MODAL 1 ---------------------------------------------------- -->
+    <!--card 2---------------------------------------------------------------------------------------------------------->
 
 
                   <div class="card bg-light border-info me-2 mb-2 col-lg-12">
