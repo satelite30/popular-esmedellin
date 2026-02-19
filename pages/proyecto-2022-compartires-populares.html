@@ -236,6 +236,13 @@
 
 
     }
+    /* Pie de foto debajo de imágenes */
+    .img-caption {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 14px;
+      color: #333;
+    }
   </style>
 </head>
 
@@ -339,22 +346,31 @@
           <!-- lista de imagenes -->
 
           <div class="page-cover align-items-end ">
-            <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine5.jpeg?raw=true"
-              alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;"
-              class="img-fluid rounded shadow" />
+            <figure style="margin:0; padding:20px 10px;">
+              <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine5.jpeg?raw=true"
+                alt="CompartirES PopularES" style="object-fit: contain;"
+                class="img-fluid rounded shadow" data-img-index="0" />
+              <figcaption class="img-caption"></figcaption>
+            </figure>
           </div>
 
           <div class="page-cover align-items-end ">
-            <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/mural1.jpeg?raw=true"
-              alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;"
-              class="img-fluid rounded shadow" />
+            <figure style="margin:0; padding:20px 10px;">
+              <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/mural1.jpeg?raw=true"
+                alt="CompartirES PopularES" style="object-fit: contain;"
+                class="img-fluid rounded shadow" data-img-index="1" />
+              <figcaption class="img-caption"></figcaption>
+            </figure>
           </div>
 
           <div class="page-cover align-items-end ">
-            <img
-              src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural3.jpeg"
-              alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;"
-              class="img-fluid rounded shadow" />
+            <figure style="margin:0; padding:20px 10px;">
+              <img
+                src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural3.jpeg"
+                alt="CompartirES PopularES" style="object-fit: contain;"
+                class="img-fluid rounded shadow" data-img-index="2" />
+              <figcaption class="img-caption"></figcaption>
+            </figure>
           </div>
 
 
@@ -1141,6 +1157,12 @@
       document.getElementById('nextImgBtn').addEventListener('click', function (e) {
         e.stopPropagation();
         showGalleryImg(currentImgIdx + 1);
+      });
+      // Rellenar pies de foto bajo cada imagen con la información de `galleryCaptions`
+      const figureEls = document.querySelectorAll('.col-lg-5 .page-cover figure');
+      figureEls.forEach((fig, i) => {
+        const cap = fig.querySelector('.img-caption');
+        if (cap) cap.textContent = galleryCaptions[i] || '';
       });
     });
 
