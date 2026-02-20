@@ -1020,3 +1020,23 @@ info procesos
     </div>
   </div>
 </div>
+
+
+
+ <!-- Sección Donations -->
+               <!-- <div class="col-md-3 what-we">
+                    <h6 class="text-light">Enlaces de interés</h6>
+                    <ul class="list-unstyled fs-5">
+                        <li><a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/unidades-administrativas/vicerrectoria-investigacion"
+                                target="_blank">Vicerectoría de Investigación UdeA</a></li>
+                        <li><a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/unidades-administrativas/vicerrectoria-investigacion"
+                                target="_blank">Universidad de Antioquia</a></li>
+                        <li><a href="https://bibliotecasmedellin.gov.co/" target="_blank">Sistema de Bibliotecas
+                                públicas de
+                                Medellín</a></li>
+                        <li><a href="https://micomuna.org/" target="_blank">Corporación Mi Comuna</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                -->
