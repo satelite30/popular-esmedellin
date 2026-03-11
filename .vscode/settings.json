@@ -1,3 +1,7 @@
 {
     "editor.wordWrap": "on",
+    "cSpell.words": [
+        "memoria"
+    ],
+    "liveServer.settings.port": 5501,
 }
